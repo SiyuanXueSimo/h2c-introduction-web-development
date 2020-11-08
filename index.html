@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>My first HTML document</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="device-width, initial-scale=1.0">
+        <style>
+            table, th, td {
+                border: 1px solid red;
+                border-collapse: collapse;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Main heading</h1>
+        <h2>Heading 2</h2>
+        <h3>Heading 3</h3>
+        <h4>Heading 4</h4>
+        <h5>Heading 5</h5>
+        <h6>Heading 6</h6>
+        <hr>
+        <p lang="en">Lorem ipsum dolor sit <b>amet consectetur adipisicing elit</b>. <i>Maiores ab officia quae placeat obcaecati</i>, laudantium atque nesciunt sint id delectus fugiat ipsa earum illum commodi qui, iure consequatur dicta a!</p>
+        <br>
+        <br>
+        <br>
+        <p>Water chemical formula is H<sub>2</sub>O. Today is 8<sup>th</sup> of Novenmber</p>
+        <p>Lorem ipsum dolor, <strong>sit amet consectetur adipisicing elit</strong>. <em>Culpa consequuntur tenetur at vel sequi deleniti</em>, nesciunt ipsa enim quod magnam maxime dolores! Atque repellendus, unde velit laboriosam quaerat sed reprehenderit!</p>
+        <hr>
+        <h2>List</h2>
+        <h3>Ordered list</h3>
+        <ol>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JAVASCRIPT</li> 
+        </ol>
+        <h3>Unordered list</h3>
+        <ul>
+            <li>C language</li>
+            <li>C++</li>
+            <li>C#</li>
+            <li>JAVA</li>
+        </ul>
+        <h3>Definition list</h3>
+        <dl>
+            <dt>Sashimi</dt>
+            <dd>Sliced raw fish that is served with condiments such as shredded daikon radish or ginger root, wasabi and soy sauce</dd>
+        </dl>
+        <hr>
+        <h2>LINK</h2>
+        <a title="Google" href="https://google.com" target="_blank">Go To GOOGLE</a>
+        <br>
+        <a title="Sibling page" href="page_sibling.html">Go to another sibling page</a>
+        <br>
+        <a title="Child page" href="./pages/page_child.html" target="_blank">Go to the child page</a>
+        <hr>
+        <h2>IMAGE</h2>
+        <img src="./images/html_icon.png" alt="html image for demonstration" title="a html icon image">
+        <img src="https://www.w3schools.com/images/w3schools_green.jpg" alt="online image">
+        <hr>
+        <h2>TABLE</h2>
+        <table>
+            <caption>HTML elements</caption>
+            <tr>
+                <th>Element</th>
+                <th>Description</th>
+            </tr>
+            <tr>
+                <td colspan="2">head section</td>
+            </tr>
+            <tr>
+                <td>title</td>
+                <td>title of the document</td>
+            </tr>
+            <tr>
+                <td>meta</td>
+                <td>provide relational information, such as charset</td>
+            </tr>
+            <tr>
+                <td colspan="2">body section</td>
+            </tr>
+            <tr>
+                <td>h1</td>
+                <td rowspan="3">Represents a heading</td>
+            </tr>
+            <tr>
+                <td>h2</td>
+            </tr>
+            <tr>
+                <td>h3</td>
+            </tr>
+            <tr>
+                <td>p</td>
+                <td>Represents a paragrahp</td>
+            </tr>
+        </table>
+        <hr>
+        <h2>FORM</h2>
+        <form action="/backend.php" method="POST">
+            <label for="username">Username</label><br>
+            <input type="text" id="username" name="username"><br>
+            <label for="password">Password</label><br>
+            <input type="password" id="password" name="password"><br>
+            <input type="submit" value="Login">
+        </form>
+        <form action="/backend.php">
+            <label for="cars">Please select a car from the list</label><br>
+            <select name="cars" id="cars">
+                <option value="1">Volvo</option>
+                <option value="2">Skoda</option>
+                <option value="3">Fiat</option>
+                <option value="4">Toyota</option>
+            </select><br>
+            <input type="submit" value="Send car brand">
+        </form><br><br><br>
+        <form action="/backend.php">
+            <textarea name="text_box" rows="10" cols="40" placeholder="Edit your text here"></textarea><br>
+            <input type="submit" value="submit">     
+        </form><br><br><br>
+
+        <button type="button" onclick="alert('Hello HTML');">Try this button to see an alert</button>
+    </body>
+</html>
