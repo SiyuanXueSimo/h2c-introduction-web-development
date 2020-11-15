@@ -1,0 +1,105 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1 {
+    color: red !important;
+}
+
+h1 {
+    color: black;
+}
+
+body {
+    background-image: url(./images/background.jpg);
+}
+
+#introduction {
+    background-color: rgb(238, 223, 223);
+    font: italic 20px 'Crimson Pro', Helvetica, sans-serif ;
+    margin: 20px;
+    border: 2px solid red;
+    padding: 30px;
+}
+
+.sidebar {
+    float: left;
+    width: 30%;
+}
+
+.content {
+    border: 1px solid black;
+    width: 70%;
+    float: left;
+}
+
+.content p {
+    font-size: large;
+}
+
+div.relative {
+    position: relative;
+    margin: 20px;
+    padding: 40px;
+    left: 50px;
+    border: 1px solid blue;
+}
+
+p.absolute {
+    position: absolute;
+    top: 0px;
+    right: 30px;
+    border: 1px solid green;
+}
+
+.footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    font-style: italic;
+    background-color: antiquewhite;
+}
+.footer > p {
+    text-align: center;
+}
+
+a:link {
+    color: blueviolet;
+}
+
+a:hover {
+    color: green;
+}
+
+a[href*="google"] {
+    background-color: yellow;
+}
+
+#html5_image {
+    width: 150px;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    z-index: -1;
+}
+
+.border-box-demo1 {
+    width: 300px;
+    height: 100px;
+    border: 1px solid blue;
+}
+
+.border-box-demo2 {
+    width: 300px;
+    height: 100px;
+    padding: 50px;
+    border: 1px solid red;
+}
+
+.main_page::after {
+    content: "";
+    clear: both;
+    display: table;
+}
